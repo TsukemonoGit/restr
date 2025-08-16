@@ -5,7 +5,8 @@ export default {
     const origin = request.headers.get("Origin") || "";
     const allowed =
       origin === "https://lumilumi.app" ||
-      /^https:\/\/.*\.lumilumi\.app$/.test(origin);
+      /^https:\/\/.*\.lumilumi\.app$/.test(origin) ||
+      origin === "https://dev.lumilumi.pages.dev";
 
     if (request.method === "OPTIONS") {
       return new Response(null, {
