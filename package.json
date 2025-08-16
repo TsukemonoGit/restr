@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts",
+    "dev": "wrangler dev src/worker.ts",
+    "deploy": "wrangler deploy --minify src/worker.ts",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
     "test": "vitest"
